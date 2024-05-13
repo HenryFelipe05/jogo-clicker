@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Idle Clicker Game</title>
+</head>
+<body>
+    <div id="stats">
+        <p>Total de dinheiro: $<span id="money">0</span></p>
+        <p>Cliques automáticos por segundo: <span id="autoClicks">0</span></p>
+    </div>
+    <div id="upgrades">
+        <button id="clickMultiplierBtn" onclick="buyUpgrade('clickMultiplier', clickMultiplierCost)">Multiplicar Cliques (+1) - $<span id="clickMultiplierCost">10</span></button>
+        <button id="autoClickMultiplierBtn" onclick="buyUpgrade('autoClickMultiplier', autoClickMultiplierCost)">Multiplicar Cliques Automáticos (+1) - $<span id="autoClickMultiplierCost">20</span></button>
+        <button id="clickSpeedBtn" onclick="buyUpgrade('clickSpeed', clickSpeedCost)">Cliques Mais Rápidos (+1) - $<span id="clickSpeedCost">10</span></button>
+    </div>
+    
+    <button id="clickButton" onclick="clickMoney()">Clique para gerar dinheiro</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
